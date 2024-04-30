@@ -1,0 +1,105 @@
+/* Estilos para Paquetes*/
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+/* Estilos para el contenedor y formulario registros */
+.contenedor-registro-padre {
+  display: flex; /* Allow stacking on small screens */
+  flex-wrap: wrap; /* Wrap elements on overflow */
+  margin: 0 auto; /* Center the form horizontally */
+  padding: 20px; /* Add some padding for aesthetics */
+  height: auto;
+  background-color: orange;
+}
+.contenedor-registro-imagen {
+  width: 700px; /* Sets the image container to 100% width */
+  height: auto;
+  display: flex;
+  align-content: center;
+  }
+.imagen-registro{
+  width: 100%; /* Sets the image to 100% width of its container */
+  height: auto; /* Allows the image to adjust its height proportionally */
+  object-fit: cover; /* Ensures the entire image is visible within the container */
+}
+
+/* Form layout adjustments */
+.contenedor-registro-formulario,
+.registro-titulo,
+.registro-subtitulo {
+  text-align: center; /* Center titles for better readability */
+  color:blue;
+}
+
+.registro-titulo h1 {
+  margin-bottom: 10px; /* Add some spacing after title */
+  color: blueviolet;
+}
+
+Form {
+  display: flex;
+  flex-wrap: wrap; /* Wrap form elements on smaller screens */
+}
+
+/* Responsive columns using Bootstrap (optional) */
+.contenedor-registro-formulario Row {
+  margin-right: -15px;
+  margin-left: -15px; /* Remove Bootstrap's default gutters */
+}
+
+.contenedor-registro-formulario Col {
+  padding-right: 15px;
+  padding-left: 15px; /* Add some padding for aesthetics */
+}
+
+/* Responsive input sizing (adjust as needed) */
+.contenedor-registro-formulario .form-control {
+  width: 100%; /* Make inputs full width on smaller screens */
+}
+
+/* Breakpoint adjustments (modify for your preferences) */
+@media (min-width: 768px) {
+  .contenedor-registro-padre {
+    flex-direction: row; /* Stack elements on medium screens */
+  }
+
+  .contenedor-registro-formulario {
+    flex: 2; /* Allocate more space to form on medium screens */
+    padding: 40px; /* Increase padding on medium screens */
+  }
+
+  .contenedor-regitro-imagen {
+    flex: 2; /* Allocate space for image on medium screens */
+  }
+
+  /* Adjust column sizing as needed here */
+  .contenedor-registro-formulario Col:nth-child(even) {
+    order: 2; /* Swap order of columns on medium screens for better layout */
+  }
+}
+
+@media (min-width: 992px) {
+  /* Additional adjustments for larger screens, if needed */
+}
+
+/*Respuesta del back*/
+.respuesta-back{
+  text-align: center;
+  color:red;
+  font-size: 25px;
+}
+
+.boton-enviar{
+ margin-top: 20px;
+ margin-left: 100px;
+}
+.boton-resetear{
+  margin-top: 20px;
+  margin-left: 100px;
+ }
+
+/*Estilos para el carrusel*/
+
+

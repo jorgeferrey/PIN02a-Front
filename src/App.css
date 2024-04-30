@@ -1,0 +1,270 @@
+.App {
+ /* text-align: center;*/
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+/*menu*/
+.contenedor-menu{
+  position: absolute;
+  height: 75 vw;
+  margin: auto;
+  width: 100%;
+  background:transparent;
+  cursor: pointer;
+}
+.contenedor-menu ul{
+  float: right;
+  margin-right: 10px;
+  text-align: left;
+}
+.contenedor-menu li{
+  display: inline-block;
+  line-height: 15px;
+  margin: 0px 2px 0px;
+}
+
+/*Estilos para pagina de inicio*/
+.contenedor-inicio-padre{
+  height: 75 vh;
+  max-width: 1450px;
+  min-width: 360px;
+  margin: auto;
+}
+.inicio-imagen{
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+}
+
+.inicio-texto {
+  position: absolute;
+  top: 20%; /* Posición inicial en el 20% del alto */
+  transform: translateY(-30%); /* Centrar verticalmente */
+  background: transparent;
+  color: white;
+  font-size: clamp(1rem, 2.5vw, 6.25rem);
+  font-family: "Satisfy", cursive;
+  width: 80%; /* Ancho del texto */
+  margin-left:30vw/* Centrar horizontalmente */
+}
+/* Media query para pantallas pequeñas (menos de 768px) */
+@media (max-width: 768px) {
+  .inicio-texto {
+    font-size: clamp(1rem, 2.5vw, 4rem); /* Ajustar tamaño de fuente para pantallas pequeñas */
+  }
+}
+
+/* Estilos generales Presentación*/
+.contenedor-presentacion-padre {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Estilos para la imagen */
+.contenedor-presentacion-imagen {
+  width: 40%;
+  max-width: 500px;
+}
+
+/* Estilos para la descripción */
+.contenedor-presentacion-descripcion {
+  width: 60%;
+  max-width: 800px;
+  padding: 0px;
+  margin-left: 30px;
+}
+
+.presentacion-texto {
+  background-color: rgb(221, 249, 234);
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: justify;
+}
+
+/* Estilos para dispositivos móviles */
+@media (max-width: 768px) {
+  .contenedor-presentacion-padre {
+    flex-direction: column;
+  }
+  .contenedor-presentacion-imagen {
+    width: 100%;
+    max-width: 100%;
+  }
+  .contenedor-presentacion-descripcion {
+    width: 100%;
+  }
+}
+
+/*Estilos para contenedor Ofertas*/
+.ofertas{
+  height: auto;
+  background-color:white;
+}
+
+/* Estilos generales Ofertas */
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+header {
+  text-align: center;
+  padding: 10px 0;
+  background-color: #04364A;
+}
+
+.titulo-ofertas {
+  font-size: 45px;
+  font-weight: bold;
+  color: white;
+  font-family: cursive;
+}
+
+/* Estilos para main */
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 10px;
+}
+
+.tarjetas {  
+  width: 240px; /* Ajustar el ancho según sea necesario */
+  margin:15px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  text-align: center;
+}
+
+.imgTarjetas {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
+}
+
+h2 {
+  font-size: 18px;
+  font-weight: bold;
+  padding: 10px 0;
+}
+
+p {
+  font-size: 14px;
+  line-height: 1.5;
+  padding: 10px;
+}
+
+/* Media queries para ajustar el diseño en pantallas más pequeñas */
+@media (max-width: 768px) {
+  .tarjetas {
+    width: 55%; /* Ajustar el ancho según sea necesario */
+  }
+}
+
+/*@media (max-width: 480px) {
+  .tarjetas {
+    width: 100%; /* Ajustar el ancho según sea necesario 
+  }
+}*/
+
+/*Estilos para el boton para llevar a top*/
+.menu-item{
+  text-decoration: none;
+  display: inline;
+  padding: 20px 20px;
+  font-weight: 700;
+  font-size: large;
+  cursor: pointer;
+  color: white;
+}
+.top-btn-position{
+  position: fixed;
+  bottom: 15px;
+  right: 20px;
+}
+
+.top-btn-style{
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  border: 2px solid gray;
+  background-color: white;
+  color:black;
+}
+.top-btn-style:hover {
+  animation: none;
+  background-color: #333;
+  color: #fff;
+  border: 2px solid #fff;
+}
+.respuesta-back {
+  animation: fadeOut 3s ease-in-out;
+}
+
+@keyframes fadeOut {
+  from { opacity: 1; }
+  to { opacity: 0; }
+}
+
+.boton-form{
+  display: flex;
+  flex-direction: row ;
+  justify-content: space-between;
+}
+
+/* Estilos para el Carrusel*/
+#carousel {
+  width: 100%; /* Para que ocupe el ancho completo del contenedor */
+  max-width: 1450px; /* Ancho máximo para pantallas más grands */
+  margin: 0 auto; /* Centrar el carrusel horizontalmente */
+}
+.carousel-item img {
+  width: 100%; /* Que las imágenes ocupen el ancho completo del contenedor */
+  height: auto; /* Mantener la proporción de la imagen */
+}
+.carousel-caption {
+  font-size: 16px; /* Tamaño de fuente base */
+  text-align: center; /* Centrar el texto horizontalmente */
+}
+
+@media (max-width: 768px) {
+  .carousel-caption {
+    font-size: 14px; /* Tamaño de fuente más pequeño para pantallas pequeñas */
+  }
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  top: 50%;
+  transform: translateY(-50%); /* Posicionar los botones verticalmente en el centro */
+}
+
+@media (max-width: 768px) {
+  .carousel-control-prev,
+  .carousel-control-next {
+    top: auto;
+    bottom: 15px; /* Posicionar los botones en la parte inferior para pantallas pequeñas */
+  }
+}
+.carousel-indicators {
+  display: flex;
+  justify-content: center; /* Centrar los puntos horizontalmente */
+  margin-bottom: 20px; /* Espacio entre los puntos y el contenido del carrusel */
+}
+
+@media (max-width: 768px) {
+  .carousel-indicators {
+    flex-direction: column; /* Apilar los puntos verticalmente para pantallas pequeñas */
+  }
+}
