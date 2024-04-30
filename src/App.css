@@ -49,7 +49,7 @@
   font-size: clamp(1rem, 2.5vw, 6.25rem);
   font-family: "Satisfy", cursive;
   width: 80%; /* Ancho del texto */
-  margin-left:30vw/* Centrar horizontalmente */
+  margin-left:25vw/* Centrar horizontalmente */
 }
 /* Media query para pantallas pequeñas (menos de 768px) */
 @media (max-width: 768px) {
@@ -70,7 +70,7 @@
 
 /* Estilos para la imagen */
 .contenedor-presentacion-imagen {
-  width: 40%;
+  width: 45%;
   max-width: 500px;
 }
 

@@ -1,5 +1,5 @@
 import React from 'react'
-import Carrusel from '../carrusel/Carrusel'
+
 
 <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet"></link>
 
