@@ -5,7 +5,7 @@ import { Row, Col, Form, Button } from 'react-bootstrap';
 // URL de la API Laravel
 
 
-const API_URL = 'https://pin02a-back.vercel.app/public/api/set-usuario';
+const API_URL = 'https://pin02a-back.vercel.app/tuviaje/public/api/set-usuario';
 
 const Registro = () => {
   const [formData, setFormData] = useState({
